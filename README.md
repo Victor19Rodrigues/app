@@ -1,2 +1,1 @@
-# app
-Sistema de CRUD em PHP.
+# Sistema de CRUD em PHP.
