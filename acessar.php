@@ -22,7 +22,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
 
 			$_SESSION['id'] = $dado['id'];
 
-			header("Location: login.php");
+			header("Location: pagina.php");
 
 		}
 

@@ -7,9 +7,9 @@
 		$sql = "DELETE FROM usuario WHERE id = '$id'";
 		$sql = $pdo->query($sql);
 
-		header("Location: index.php");
+		header("Location: pagina.php");
 
 	}else{
-		header("Location: index.php");
+		header("Location: pagina.php");
 	}
 ?>

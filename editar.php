@@ -15,7 +15,7 @@
 		$sql = "UPDATE usuario SET nome = '$nome', email = '$email' WHERE id = '$id'";
 		$sql = $pdo->query($sql);
 
-		header("Location: index.php");
+		header("Location: pagina.php");
 	}	
 
 	$sql = "SELECT *FROM usuario WHERE id = '$id'";
@@ -24,7 +24,7 @@
 	if($sql->rowCount() > 0){
 		$dado = $sql->fetch(); //retorna somente um resultado, já que um usuario possui somente um id
 	}else{
-		header("Location: index.php");
+		header("Location: pagina.php");
 	}
 ?>
 

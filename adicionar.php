@@ -9,7 +9,7 @@
 		$sql = "INSERT INTO usuario SET nome = '$nome', email = '$email', senha = '$senha'";
 		$sql = $pdo->query($sql);
 
-		header("Location: index.php");
+		header("Location: pagina.php");
 	}
 ?>
 
