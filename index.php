@@ -3,8 +3,8 @@
 ?>
 
 <link rel="stylesheet" type="text/css" href="style.css">
-
 <a href="adicionar.php">Adicionar novo usuário</a>
+<title>CONTROLE DE USUÁRIOS</title>
 <table>
 	<tr>
 		<th>Nome</th>
@@ -16,7 +16,7 @@
 		$sql = $pdo->query($sql);
 
 		if($sql->rowCount() > 0){
-			foreach($sql->fetchAll() as $usuario){ //fetchAll percorre todo o banco
+			foreach($sql->fetchAll() as $usuario){ //fetchAll (pega tudo) percorre todo o banco
 				echo '<tr>';
 					echo '<td>'.$usuario['nome'].'</td>';
 					echo '<td>'.$usuario['email'].'</td>';
